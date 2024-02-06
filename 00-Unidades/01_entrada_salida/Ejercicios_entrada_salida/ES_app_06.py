@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: Cristian
+apellido: Aiello
 ---
 Ejercicio: entrada_salida_06
 ---
@@ -39,7 +39,10 @@ class App(customtkinter.CTk):
 
 
     def btn_sumar_on_click(self):
-        pass
+        valor_1 = int(self.txt_operador_a.get())
+        valor_2 = int(self.txt_operador_b.get())
+        resultado = valor_1 + valor_2
+        alert("Suma", "El resultado de las sumas es: {}" .format(resultado))
      
         
 if __name__ == "__main__":
