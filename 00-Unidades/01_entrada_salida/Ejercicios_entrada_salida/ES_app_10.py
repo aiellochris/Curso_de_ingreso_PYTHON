@@ -34,8 +34,8 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, padx=30, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        valor_real = int(self.txt_importe.get())
-        descuento = int(valor_real * 0.2)
+        valor_real = float(self.txt_importe.get())
+        descuento = float(valor_real * 0.2)
         valor_con_descuento = valor_real - descuento
         alert("$ Descuento", valor_con_descuento)
         

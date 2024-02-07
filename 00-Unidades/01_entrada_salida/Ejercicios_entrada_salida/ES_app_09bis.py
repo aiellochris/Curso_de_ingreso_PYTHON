@@ -39,9 +39,9 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        sueldo = int(self.txt_sueldo.get())
-        porcentaje_de_incremento = int(self.txt_incremento.get())
-        sueldo_con_aumento = int(sueldo * (porcentaje_de_incremento / 100)) + sueldo
+        sueldo = float(self.txt_sueldo.get())
+        porcentaje_de_incremento = float(self.txt_incremento.get())
+        sueldo_con_aumento = (sueldo * (porcentaje_de_incremento / 100)) + sueldo
         alert("Sueldo actualizado", "Tu sueldo actualizado con el aumento porcentual es de: {}" .format(sueldo_con_aumento)) 
         
     
