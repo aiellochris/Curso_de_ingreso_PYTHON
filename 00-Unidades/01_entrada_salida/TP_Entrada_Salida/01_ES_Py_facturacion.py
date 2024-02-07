@@ -72,7 +72,7 @@ class App(customtkinter.CTk):
         valor_2 = self.txt_importe_2.get()
         valor_3 = self.txt_importe_3.get() 
         resultado = float(valor_1) + float(valor_2) + float(valor_3)
-        resultado_con_iva = (resultado * 0.21) + resultado
+        resultado_con_iva = resultado * 1.21
         alert("Valor con iva", resultado_con_iva)
     
 
